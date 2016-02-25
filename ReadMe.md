@@ -1,10 +1,10 @@
 # ConEmu Task Configurations
-ConEmu is a Terminal Emulator for windows.  This configuration information is taken from my Window 10 machine.
+ConEmu is a free Terminal Emulator for windows.  This configuration information is taken from my Window 10 machine.
 
 Installing a terminal emulator like ConEmu will allow one to seamlessly integrate the command terminal with WebStorm and Git Shell. This makes it easy to navigate directories when building golang projects on Windows.
 
 ## Background
-ConEmu is a Windows Terminal\Console emulator. [ConEmu](https://conemu.github.io/)
+ConEmu is a free Windows Terminal\Console emulator. [ConEmu](https://conemu.github.io/)
 
 ConEmu consoles can be configured to display various utilities such as PowerShell,
 Windows Command Prompt and Git Shell.
@@ -12,7 +12,7 @@ Windows Command Prompt and Git Shell.
 If you use WebStorm, ConEnmu can be configured as an 'External Tool' or 'Terminal'
 which can then be called from the Webstorm IDE displaying WebStorm's current working directory.
 I like the 'External Tool' configuration because you can call it from the Project Tree in Webstorm
-and specifiy the precise directory where you want to launch the terminal emulator. No changing
+and specify the precise directory where you want to launch the terminal emulator. No changing
 directories required.
 
 The information in the 'TaskConfigs' folder shows how to configure ConEmu 'Tasks'.  If you are not
@@ -46,4 +46,9 @@ from within the WebStorm IDE.
             ```
     * After these alias parameters are configured, simply type 'cls' or 'clear' at the command window
       to clear the console window.
-    * On my Windows 10 machine Ctrl+L will also clear the console. 
+    * On my Windows 10 machine Ctrl+L will also clear the console.
+
+## Launch Windows Explorer From Terminal Console
+    * Launch Windows Explorer from the console. Explorer will default to the current directory.
+    * In Git Shell execute: "start . <ENTER>"
+    * "start . <ENTER>" works in the Git Shell without ConEmu.
