@@ -9,11 +9,15 @@ ConEmu is a free Windows Terminal\Console emulator. [ConEmu](https://conemu.gith
 ConEmu consoles can be configured to display various utilities such as PowerShell,
 Windows Command Prompt and Git Shell.
 
-If you use WebStorm, ConEnmu can be configured as an 'External Tool' or 'Terminal'
+If you use WebStorm, ConEnmu can be configured as an 'External Tool' and/or 'Terminal Tool'
 which can then be called from the Webstorm IDE displaying WebStorm's current working directory.
 I like the 'External Tool' configuration because you can call it from the Project Tree in Webstorm
 and specify the precise directory where you want to launch the terminal emulator. No changing
 directories required.
+
+    ```
+    ./WebStormSetup/ExternalToolSetup/00_WebstormExternalToolConEmuGitShellSetup.md
+    ```
 
 The information in the 'TaskConfigs' folder shows how to configure ConEmu 'Tasks'.  If you are not
 familiar with the 'Tasks' concept, review the docs for ConEmu.
